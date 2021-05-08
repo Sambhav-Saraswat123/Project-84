@@ -34,32 +34,3 @@ function move() {
   uploadCar1();
   uploadCar2();
 }
-window.addEventListener("keydown", (e) => {
-  const car1Keys = ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"];
-  const car2Keys = ["w", "s", "a", "d"];
-  const key = e.key;
-  if (key == car1Keys[0]) {
-    if (car1Y >= 0) {
-      car1Y = car1Y - 10;
-    }
-    move();
-  }
-  if (key == car1Keys[1]) {
-    if (car1Y <= 500) {
-      car1Y = car1Y + 10;
-    }
-    move();
-  }
-  if (key == car1Keys[2]) {
-    if (car1X >= 0) {
-      car1X = car1X - 10;
-    }
-    move();
-  }
-  if (key == car1Keys[3]) {
-    if (car1X <= 700) {
-      car1X = car1X + 10;
-    }
-    move();
-  }
-});
